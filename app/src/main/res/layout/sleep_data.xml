@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/DateTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingStart="16dp">
+
+            <TextView
+                android:id="@+id/sleepHoursTextView"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Sleep Hours"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sleepQualityTextView"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Sleep Quality"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/notesTextView"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Notes"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginRight ="10dp"
+            android:background="@drawable/buttons_edges"/>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttons_edges"/>
+    </LinearLayout>
+</LinearLayout>

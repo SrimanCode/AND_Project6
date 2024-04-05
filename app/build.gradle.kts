@@ -39,6 +39,7 @@ android {
 }
 
 dependencies {
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
     val room_version = "2.4.2"
     implementation ("androidx.room:room-runtime:$room_version")
     implementation ("androidx.room:room-ktx:$room_version")

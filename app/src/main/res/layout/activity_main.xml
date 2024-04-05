@@ -4,100 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/addSleepDataButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Sleep Data"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/buttons_edges"
-        android:layout_centerHorizontal="true"/>
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        />
 
-    <LinearLayout
-        android:id="@+id/inputSection"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="gone"
-        android:layout_below="@id/addSleepDataButton">
-
-        <EditText
-            android:id="@+id/sleepHourInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:hint="Enter sleep hours (0-24)"/>
-
-        <EditText
-            android:id="@+id/sleepQualityInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:hint="Enter sleep quality (0-10)"/>
-
-        <EditText
-            android:id="@+id/notesInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Add notes"/>
-
-        <Button
-            android:id="@+id/saveButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/buttons_edges"
-            android:layout_gravity="center"/>
-
-        <Button
-            android:id="@+id/saveButton1"
-            android:visibility="gone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="Save"
-            android:background="@drawable/buttons_edges"
-            android:layout_gravity="center"/>
-
-    </LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/sleepDataRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/inputSection"
-        android:layout_marginTop="95dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/inputSection"
-        android:orientation="vertical"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:padding="16dp"
-        android:background="@drawable/rounded_corners">
-
-
-
-        <TextView
-            android:id="@+id/averageSleepHour"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Average Sleep Hour: N/A"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/averageSleepQuality"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Average Sleep Quality: N/A"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bottom_navigation"
+        />
 
 </RelativeLayout>

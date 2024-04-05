@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/SrimanCode/AND_Project6' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/SrimanCode/AND_Project6/blob/main/Kapture%202024-04-04%20at%2019.32.10.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [Kap](https://getkap.co/) for macOS
